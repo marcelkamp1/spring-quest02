@@ -19,11 +19,7 @@ public class SpringQuest02Application {
 	@RequestMapping("/")
 	@ResponseBody
 	public String index() {
-		return "Doctor Who:"
-				+ "<ul><li><a href='/doctor/1'>Doctor 1</a></li>"
-				+ "<li><a href='/doctor/7'>Doctor 7</a></li>"
-				+ "<li><a href='/doctor/10'>Doctor 10</a></li>"
-				+ "<li><a href='/doctor/13'>Doctor 13</a></li></ul>";
+		return "Insert your incarnation number under '/doctor/{yourNumber}";
 	}
 	
 	@RequestMapping("/doctor/{number}")
